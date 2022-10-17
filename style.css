@@ -25,7 +25,7 @@ nav {
   transition: all 0.5s;
   z-index: 3;
   opacity: 0;
-  border: 1px solid rgb(255, 0, 217);
+  border-right: 1px solid rgb(255, 0, 217);
 }
 
 .open nav {
@@ -166,7 +166,7 @@ nav .inner ul li a:hover {
   font-style: normal;
   font-weight: 8;
   font-size: 3rem;
-  line-height: 93px;
+  line-height: 100px;
   letter-spacing: 0.03em;
 }
 
@@ -184,7 +184,7 @@ nav .inner ul li a:hover {
   font-style: normal;
   font-weight: 8;
   font-size: 3rem;
-  line-height: 93px;
+  line-height: 95px;
   color: #FFFFFF;
 }
 

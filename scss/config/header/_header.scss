@@ -25,7 +25,7 @@ nav {
     transition: all 0.5s;
     z-index: 3;
     opacity: 0;
-    border: 1px solid rgb(255, 0, 217);
+    border-right: 1px solid rgb(255, 0, 217);
 }
 .open nav {
     left: 0;
