@@ -50,10 +50,11 @@ nav .inner ul li {
 nav .inner ul li a {
   display: block;
   color: #333;
-  font-size: 20px;
+  font-size: 1.3rem;
   padding: 1rem;
   text-decoration: none;
   transition-duration: 0.2s;
+  font-family: "Anton", sans-serif;
 }
 
 nav .inner ul li a:hover {
@@ -1245,4 +1246,6 @@ dialog::backdrop {
 body {
   background: rgb(0, 0, 0) url(../img/share/bg.gif) no-repeat left top;
   font-size: 80%;
+  font-family: "Anton", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }/*# sourceMappingURL=style.css.map */
