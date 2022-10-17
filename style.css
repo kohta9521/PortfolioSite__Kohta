@@ -336,7 +336,55 @@ nav .inner ul li a:hover {
 .about {
   width: 100%;
   height: 100vh;
-  background-color: rgb(110, 110, 110);
+}
+
+.about__title--area {
+  width: 30%;
+  height: 20%;
+  margin-left: 5%;
+}
+
+.about__title {
+  width: 292px;
+  height: 74px;
+  font-family: "Hiragino Kaku Gothic StdN";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 75px;
+  padding-top: 15%;
+  color: #FFFFFF;
+}
+
+.about__subtitle {
+  display: block;
+  margin-top: -10%;
+  font-family: "Webdings";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.about__content--area {
+  width: 90%;
+  height: 80vh;
+  margin: 5% auto;
+}
+
+.about__content {
+  font-family: "Hiragino Kaku Gothic Std";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 50px;
+  /* or 200% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
 }
 
 .profile {
@@ -1474,6 +1522,8 @@ body {
   font-size: 80%;
   font-family: "Anton", sans-serif;
   font-family: "Noto Sans JP", sans-serif;
+  margin: 0 0 0 0;
+  padding: 0;
 }
 
 li {
