@@ -397,14 +397,13 @@ nav .inner ul li a:hover {
 .career {
   width: 100%;
   height: 150vh;
-  background-color: rgb(149, 145, 145);
 }
 
 /*タイムライン全体の設定*/
 .timeline {
-  max-width: 400px;
+  max-width: 60%;
   width: 100%;
-  margin: 50px auto;
+  margin: 0 auto;
   padding: 0 30px;
 }
 
@@ -415,8 +414,19 @@ nav .inner ul li a:hover {
   padding: 0 0 20px 0;
 }
 
+.timeline dt {
+  color: white;
+  font-size: 1.5rem;
+}
+
 .timeline dl {
   margin: 0 0 20px 3em;
+}
+
+.timeline dd {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 30px;
 }
 
 /*絶対配置で線を設定*/
@@ -425,9 +435,9 @@ nav .inner ul li a:hover {
   position: absolute;
   left: 0.2em;
   top: 0;
-  width: 2px; /*線の太さ*/
+  width: 3px; /*線の太さ*/
   height: 0; /*はじめは高さを0に*/
-  background: #ccc;
+  background: rgb(255, 17, 243);
 }
 
 /*タイムラインの見出し横の丸の位置と形状*/
@@ -438,7 +448,7 @@ nav .inner ul li a:hover {
   left: 0;
   width: 10px;
   height: 10px;
-  background: #666;
+  background: rgb(255, 255, 255);
   border-radius: 50%;
 }
 
