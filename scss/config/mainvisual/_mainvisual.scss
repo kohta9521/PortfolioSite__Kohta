@@ -129,6 +129,7 @@
 // sidebar 記述
 .sidebar__area {
     position: absolute;
+    position: fixed;
     top: 50%;
     right: 2%;
     width: 5%;
@@ -146,3 +147,6 @@
     height: 70%;
     margin-bottom: 40%;
 }
+
+
+//グリッチエフェクト
