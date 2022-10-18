@@ -509,71 +509,9 @@ nav .inner ul li a:hover {
 
 .works {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
+  margin-top: 10%;
   background-color: rgb(100, 80, 80);
-}
-
-/*画像の横幅を100%にしてレスポンシブ化*/
-.gallery img {
-  width: 100%;
-  height: auto;
-  vertical-align: bottom; /*画像の下にできる余白を削除*/
-}
-
-/*メイン画像下に余白をつける*/
-.gallery {
-  margin: 0 0 5px 0;
-}
-
-.wrapper {
-  width: 94%;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.gallery li {
-  list-style: none;
-}
-
-/*矢印の設定*/
-/*戻る、次へ矢印の位置*/
-.slick-prev,
-.slick-next {
-  position: absolute; /*絶対配置にする*/
-  z-index: 3;
-  top: 42%;
-  cursor: pointer; /*マウスカーソルを指マークに*/
-  outline: none; /*クリックをしたら出てくる枠線を消す*/
-  border-top: 2px solid #ccc; /*矢印の色*/
-  border-right: 2px solid #ccc; /*矢印の色*/
-  height: 25px;
-  width: 25px;
-}
-
-.slick-prev { /*戻る矢印の位置と形状*/
-  left: 2.5%;
-  transform: rotate(-135deg);
-}
-
-.slick-next { /*次へ矢印の位置と形状*/
-  right: 2.5%;
-  transform: rotate(45deg);
-}
-
-/*選択するサムネイル画像の設定*/
-.choice-btn li {
-  cursor: pointer;
-  outline: none;
-  background: #333;
-  list-style: none;
-}
-
-.choice-btn li img {
-  opacity: 0.4; /*選択されていないものは透過40%*/
-}
-
-.choice-btn li.slick-current img {
-  opacity: 1; /*選択されているものは透過しない*/
 }
 
 .skill {
@@ -584,10 +522,158 @@ nav .inner ul li a:hover {
 
 .contact {
   width: 100%;
-  height: 80vh;
-  background-color: rgb(255, 255, 255);
+  height: 130vh;
 }
 
+.Form {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+
+@media screen and (max-width: 480px) {
+  .Form {
+    margin-top: 40px;
+  }
+}
+.Form-Item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .Form-Item {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-wrap: wrap;
+  }
+}
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .Form-Item-Label {
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .Form-Item-Label.isMsg {
+    margin-top: 0;
+  }
+}
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  background: #ff00dd;
+  color: #fff;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 32px;
+    font-size: 10px;
+  }
+}
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #ff00fb;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .Form-Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+}
 .footer {
   width: 100%;
   height: 20vh;
