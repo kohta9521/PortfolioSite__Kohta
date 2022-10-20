@@ -145,3 +145,26 @@ nav .inner ul li a:hover {
     width: 20px;
     height: 20px;
 }
+
+
+@media screen and (max-width: 960px) {
+    .header {
+        width: 100%;
+    }
+    .navArea {
+    }
+}
+    
+/*520px以下で文字色青色になる*/
+@media screen and (max-width: 520px) {
+    .main__title h1 {
+        width: 90%;
+        height: 45vh;
+        font-size: 1rem;
+    }
+    .main__subtitle h1 {
+        width: 90%;
+        height: 45vh;
+        font-size: 1rem;
+    }
+}
